@@ -1,0 +1,50 @@
+.header {
+  background: rgba(#fff, 0.15);
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+.header__logo {
+  a {
+    width: 338px;
+    height: 50px;
+  }
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+.social__link {
+  margin-left: 52px;
+  width: 32px;
+  height: 32px;
+}
+
+/// navbar
+.navbar__link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: $red;
+  font-weight: 700;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.navbar__list {
+  display: inline-block;
+}
+.navbar__list + .navbar__list {
+  position: relative;
+  margin-left: 12px;
+  padding-left: 23px;
+  &::before {
+    content: '/';
+    position: absolute;
+    left: 0;
+    color: #000;
+  }
+}

@@ -1,0 +1,210 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+h1 {
+  color: $red;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+h2 {
+  color: $red;
+  line-height: 1.25;
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25em;
+  line-height: 1.25;
+}
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.39;
+  margin-bottom: 16px;
+}
+h6 {
+  font-size: 1rem;
+  color: $red;
+}
+p {
+  line-height: 1.3125;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1390px;
+  width: 100%;
+}
+
+/// components
+.tags {
+  margin-bottom: 23px;
+  span + span {
+    margin-left: 12px;
+  }
+  span {
+    font-size: 0.875rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+  }
+}
+.date {
+  color: #fff;
+  background-color: $red;
+}
+.tag {
+  color: $red;
+  background-color: #fff;
+}
+.link {
+  color: #fff;
+  background-color: $red;
+  font-size: 1rem;
+  line-height: 1.25;
+  padding: 8px 40px 8px 16px;
+  border-radius: 5px;
+  position: relative;
+  font-weight: 700;
+  width: fit-content;
+  display: flex;
+  margin: 0 auto;
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/svg/arrow-right.svg');
+    right: 16px;
+    top: 13px;
+    width: 16px;
+    height: 11px;
+  }
+}
+
+/// aside and main -------
+main {
+  background-color: #f8f9fa;
+  padding: 48px 0;
+}
+.main {
+  .sport-links {
+    margin-bottom: 0;
+  }
+}
+.main__inner {
+  display: flex;
+  margin-bottom: 30px;
+}
+.main__content {
+  margin-right: 30px;
+  width: 100%;
+}
+.aside {
+  max-width: 432px;
+  width: 100%;
+}
+.aside {
+  .clanky {
+    .top__item {
+      height: 288px;
+      margin-bottom: 13px;
+      h3 {
+        color: #fff;
+      }
+    }
+    .top__content {
+      left: 24px;
+      bottom: 24px;
+      .tags {
+        margin-bottom: 13px;
+      }
+    }
+
+    h2 {
+      position: relative;
+      padding-left: 51px;
+      margin-bottom: 26px;
+      &::before {
+        content: '';
+        position: absolute;
+        background-image: url('../images/svg/clanek.svg');
+        left: 0;
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+  .news {
+    margin-bottom: 32px;
+    .news__top {
+      margin-bottom: 26px;
+    }
+    .news__content {
+      padding: 24px 24px 10px 24px;
+    }
+    .news__item {
+      margin-left: 0;
+      margin-bottom: 14px;
+    }
+    .link {
+      margin: 0 0 0 auto;
+    }
+  }
+}
+
+//// aside and main

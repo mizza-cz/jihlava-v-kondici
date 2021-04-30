@@ -1,0 +1,257 @@
+@media (max-width: 1410px) {
+  .homepage {
+    .news__inner {
+      margin-left: 0;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .news__item {
+      max-width: 100%;
+      flex: 0 0 32%;
+      margin-left: 0;
+    }
+  }
+  .top__item--1 {
+    width: 740px;
+  }
+}
+@media (max-width: 1400px) {
+  .kalendar-page {
+    .news__inner {
+      margin-left: 0;
+      justify-content: space-between;
+    }
+    .news__item {
+      flex: 0 49%;
+      margin-left: 0;
+      max-width: 100%;
+    }
+  }
+}
+@media (max-width: 1340px) {
+  .article .top__item {
+    height: 520px;
+  }
+}
+@media (max-width: 1280px) {
+  .article .top__item {
+    height: 480px;
+  }
+  .multimedia__gallery-img {
+    height: 330px;
+  }
+  .multimedia__video .multimedia__video-box iframe {
+    height: 600px;
+  }
+  .multimedia__video,
+  .multimedia__gallery {
+    flex: 100%;
+    margin-right: 0;
+  }
+  .multimedia__inner {
+    flex-wrap: wrap;
+  }
+  .top {
+    padding: 20px 0;
+  }
+  .top__inner {
+    grid-gap: 20px;
+  }
+  .top__item--1 {
+    width: 670px;
+    height: 508px;
+  }
+}
+@media (max-width: 1170px) {
+  .main__content {
+    margin-right: 0;
+  }
+  .article .top__item {
+    height: 560px;
+  }
+  .aside {
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+  .sport-links__item {
+    flex: 0 40%;
+    margin: 20px;
+  }
+  .sport-links__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .top__item {
+    height: 280px;
+  }
+  .top__item--1 {
+    width: 100%;
+    height: 508px;
+  }
+  .top__inner {
+    grid-template-areas: 'top__item--1 top__item--1' 'top__item--2 top__item--3';
+  }
+}
+@media (max-width: 1040px) {
+  .multimedia__video .multimedia__video-box iframe {
+    height: 500px;
+  }
+  .multimedia__gallery-img {
+    height: 270px;
+  }
+}
+@media (max-width: 980px) {
+  .homepage .news__item {
+    flex: 0 49%;
+  }
+  .sport-links__item {
+    flex: 0 45%;
+  }
+}
+
+@media (max-width: 870px) {
+  .multimedia__gallery-box {
+    grid-template-columns: auto auto;
+  }
+  .article .top__item {
+    height: 480px;
+  }
+  .sport-links__item {
+    flex: 0 70%;
+  }
+  .top__inner {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'top__item--1' 'top__item--2' 'top__item--3';
+  }
+}
+@media (max-width: 800px) {
+  .multimedia__video .multimedia__video-box iframe {
+    height: 420px;
+  }
+}
+
+@media (max-width: 740px) {
+  .top__item--1 {
+    height: 280px;
+  }
+  .top__content {
+    left: 25px;
+    bottom: 25px;
+    h1,
+    h2 {
+      padding-right: 25px;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+}
+@media (max-width: 680px) {
+  .static {
+    padding: 0 20px;
+  }
+  .article__content {
+    padding: 20px 10px;
+  }
+  .article .top__item {
+    height: 380px;
+  }
+}
+@media (max-width: 660px) {
+  .multimedia__video .multimedia__video-box iframe {
+    height: 320px;
+  }
+  .sport-links__item {
+    flex: 0 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .kalendar__row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .label__select,
+  .label__search {
+    max-width: 100%;
+  }
+  .kalendar {
+    padding: 20px;
+  }
+  .select,
+  .label__checkbox {
+    margin-bottom: 25px;
+  }
+  .kalendar-page,
+  .homepage {
+    .news__item {
+      flex: 100%;
+    }
+    .news__top {
+      .link {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .multimedia__gallery-img,
+  .multimedia__video .multimedia__video-box iframe {
+    height: 280px;
+  }
+  .multimedia__gallery-box {
+    grid-template-columns: auto;
+  }
+  .static {
+    padding: 0 5px;
+  }
+  .article .top__item {
+    height: 320px;
+  }
+  .sport-links__item {
+    flex: 100%;
+    margin: 0 0 20px 0;
+  }
+  .top__content {
+    left: 20px;
+    bottom: 20px;
+    h1,
+    h2 {
+      font-size: 1.4rem;
+      line-height: 1.2;
+      padding-right: 20px;
+    }
+  }
+}
+@media (max-width: 440px) {
+  .multimedia__gallery-img,
+  .multimedia__video .multimedia__video-box iframe {
+    height: 240px;
+  }
+  .sport-links__item {
+    padding: 31px 0;
+  }
+}
+@media (max-width: 400px) {
+  .sport-links__content {
+    h2 {
+      font-size: 1.25rem;
+    }
+    svg {
+      width: 50px;
+      height: 50px;
+      margin: 0 20px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .top__content {
+    h1,
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+}
