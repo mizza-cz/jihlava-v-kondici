@@ -11,4 +11,7 @@ $(function () {
   $('.select__redirect').change(function () {
     location.href = $(this).val();
   });
+  $('.media-menu').on('click', function () {
+    $('.header__menu').slideToggle();
+  });
 });
